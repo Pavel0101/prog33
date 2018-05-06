@@ -1,7 +1,9 @@
 class Gishatich extends Mayr {
     constructor(x, y, index){
-        super(x,y);
-        this.speed = 24;
+        super(x,y,index);
+        this.energy = Math.round(Math.random() * 16);
+        this.speed = 24
+        this.multiply = Math.round(Math.random() * 16);
     }
     utel() {
         this.energy--;

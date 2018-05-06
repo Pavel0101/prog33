@@ -1,9 +1,8 @@
 class Grass extends Mayr {
     constructor(x, y, index) {
-        super(x, y);
+        super(x, y, index);
         this.speed = 8;
-        matrix[this.y][this.x] = this.index;
-
+        this.multiply = Math.round(Math.random() * 50);
     }
     mul() {
         this.multiply++;

@@ -1,7 +1,10 @@
 class Xotaker extends Mayr{
     constructor(x,y,index){
-        super(x,y);
+        super(x,y, index);
+        this.energy = Math.round(Math.random() * 8);
+        this.multiply = Math.round(Math.random() * 8);
         this.speed = 8;
+                
     }
     utel() {
         this.energy--;

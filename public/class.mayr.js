@@ -3,8 +3,8 @@ class Mayr {
         this.x = x;
         this.y = y;
         this.index = index;
-        this.energy = Math.round(Math.random() * 16);
-        this.multiply = Math.round(Math.random() * 16);
+        
+        matrix[this.y][this.x] = this.index;
         this.directions = [
             [this.x - 1, this.y - 1],
             [this.x, this.y - 1],
